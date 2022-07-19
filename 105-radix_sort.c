@@ -25,7 +25,7 @@ if (index[0] == (int)size)
 return;
 
 /* we can work in here building a hash table or hash array */
-/* or work like insertion, let's calculate the index and set */
+/* or work like insertion, lets calculate the index and set */
 for (i = 1; i < 10; i++)
 index[i] += index[i - 1];
 
@@ -33,7 +33,7 @@ for (i = 9; i > 0; i--)
 index[i] = index[i - 1];
 index[0] = 0;
 
-/* now let's have a middle sorted array */
+/* now lets have a middle sorted array */
 for (i = 0; i < (int)size; i++)
 {
 /* check the start position of array[i] with index table */
@@ -67,9 +67,10 @@ void radix_sort(int *array, size_t size)
 {
 int *result;
 
+if (!array || size <= 1)
 return;
 result = malloc(sizeof(int) * size);
-if (result = malloc(sizeof(int) * size);)
+if (!result)
 return;
 /* one way, we will find how many time sort = #digits of max_number */
 /* Second way,recursion it is helpfull if the array is bigger */
