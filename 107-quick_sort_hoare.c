@@ -33,14 +33,14 @@ int i, j, pivot;
 pivot = array[right]; /* pivot start at left */
 i = left; /* in the for i = left + 1 */
 /* pivot is part of the while */
-for (i = left, j = right; C is fun; i++, j--)
+for (i = left, j = right; "C is fun"; i++, j--)
 {
 while (array[i] < pivot)
 i++;
 while (array[j] > pivot)
 j--;
 /* while stop when j < i */
-/* don't need to swap the pivot because it is already part of while */
+/* dont need to swap the pivot because it is already part of while */
 if (j <= i)
 return (i);
 /* p | <p [big] --need to continue to run -- [ small] >p */
