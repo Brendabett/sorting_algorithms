@@ -40,7 +40,7 @@ head = right;
 /* if the head needs to change */
 if (head != i)
 {
-/* if the value is the same, don't swap */
+/* if the value is the same, dont swap */
 _swap(&array[i], &array[head]);
 print_array(array, print_size);
 /* we need to heapify all the tree again */
@@ -60,6 +60,7 @@ void heap_sort(int *array, size_t size)
 int first_head, i;
 size_t print_size = size;
 
+if (size <= 1 || !array)
 return;
 
 /* calculate the index of the first_head */
