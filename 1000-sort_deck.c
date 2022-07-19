@@ -27,7 +27,7 @@ int card_number(const card_t *card)
 {
 int i;
 char *card_list[13] = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10",
- "Jack", "Queen", "King"};
+"Jack", "Queen", "King"};
 
 for (i = 0; i < 13; i++)
 if (!_strcmp((char *)card_list[i], (char *)card->value))
